@@ -1,42 +1,149 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  background-color: #aaa;
+  font-family: Inter;
+  font-weight: 400;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+.badge{
+  line-height: 20px;
+  padding: 2px 12px;
+  background-color: #F3F4F6;
+  font-size: .875rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.square{
+  border-radius: 4px;
+}
+
+.pill{
+  border-radius: 12px;
+}
+
+.gray{
+  background-color: #F3F4F6;
+  color: #1F2937;
+}
+
+.red{
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.yellow{
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.green{
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.blue{
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+.indigo{
+  background-color: #E0E7FF;
+  color: #3730A3;
+}
+
+.purple{
+  background-color: #EDE9FE;
+  color: #5B21B6;
+}
+
+.pink{
+  background-color: #FCE7F3;
+  color: #9D174D;
+}
+
+.banner{
+  display: flex;
+  padding: 1em;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+svg{
+  flex-shrink: 0;
+}
+
+
+.text :nth-child(1){
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9FAFB;
+  max-width: 336px;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+.card:hover{
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+}
+
+.cloud{
+  background-color: #3F75FE;
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  border-radius: 6px;
+  position: relative;
+  bottom: 24px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+}
+
+.cardText{
   text-align: center;
+  padding: 0 24px 32px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.cardText :first-child{
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  color: #111827;
+  line-height: 28px;
+  font-weight: 500;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardText :nth-child(2){
+  color: #6B7280;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.testimonial{
+  background: #2545B8;
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.headshot{
+  aspect-ratio: 384/464;
+  object-fit: cover;
+  object-position: center 50%;
+  width: 50px;
+  flex: 1 0 50px;
 }
 
-.read-the-docs {
-  color: #888;
+.testimonialText{
+  color: #fff;
 }
+
